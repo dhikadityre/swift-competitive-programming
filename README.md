@@ -46,8 +46,7 @@ To open and run the solutions locally:
 |---|---------|------------|----------|---------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [Code](Pages/01-Two-Sum.xcplaygroundpage/Contents.swift) | [Writeup](Pages/01-Two-Sum.xcplaygroundpage/README.md) |
 | 2 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | [Code](Pages/02-Contains-Duplicate.xcplaygroundpage/Contents.swift) | [Writeup](Pages/02-Contains-Duplicate.xcplaygroundpage/README.md) |
-
----
+| 3 | [Problem 3](https://leetcode.com/problems/problem-3/) | Easy | [Code](Pages/03.xcplaygroundpage/Contents.swift) | [Writeup](Pages/03.xcplaygroundpage/README.md) |
 
 ## 🛠 Features of this Setup
 
