@@ -1,21 +1,7 @@
 import Foundation
 
-class Solution {
-    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var dict = [Int: Int]()
-        for (index, num) in nums.enumerated() {
-            let complement = target - num
-            if let complementIndex = dict[complement] {
-                return [complementIndex, index]
-            }
-            dict[num] = index
-        }
-        return []
-    }
-}
-
 // MARK: - Test Cases
-let solution = Solution()
+let solution = TwoSumSolutions()
 let test1 = solution.twoSum([2, 7, 11, 15], 9)
 print("Test Case 1: nums = [2,7,11,15], target = 9 -> Result: \(test1) (Expected: [0, 1])")
 
