@@ -99,17 +99,23 @@ def main():
         code_link = f"Pages/{folder}/Contents.swift"
         writeup_link = f"Pages/{folder}/README.md"
 
-        # If it already exists in the table, preserve its metadata (difficulty, custom leetcode link)
-        if num in existing_rows:
+        # If it already exists in the table, preserve its metadata (unless it was a placeholder)
+        is_placeholder = num in existing_rows and existing_rows[num]['title'].startswith('Problem ') and not title.startswith('Problem ')
+        
+        if num in existing_rows and not is_placeholder:
             row_data = existing_rows[num]
             row_line = f"| {num} | [{row_data['title']}]({row_data['link']}) | {row_data['difficulty']} | [Code]({code_link}) | [Writeup]({writeup_link}) |"
         else:
-            # Create a new row with guessed/placeholder values
+            # Create a new row or overwrite placeholder values
             slug = title.lower().replace(' ', '-')
             guessed_link = f"https://leetcode.com/problems/{slug}/"
             difficulty = "Easy"  # default placeholder
             row_line = f"| {num} | [{title}]({guessed_link}) | {difficulty} | [Code]({code_link}) | [Writeup]({writeup_link}) |"
-            print(f"Found new page: #{num} - {title}")
+            if is_placeholder:
+                print(f"Updating placeholder page: #{num} -> {title}")
+            else:
+                print(f"Found new page: #{num} - {title}")
+
 
         table_rows.append(row_line)
 

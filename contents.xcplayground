@@ -3,5 +3,8 @@
     <pages>
         <page name='01-Two-Sum'/>
         <page name='02-Contains-Duplicate'/>
+        <page name='03-Valid-Anagram'/>
+        <page name='04-Missing-Number'/>
+        <page name='05-Majority-Element'/>
     </pages>
 </playground>

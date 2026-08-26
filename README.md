@@ -77,7 +77,9 @@ Whenever you add a new Playground Page or update problem titles, run the Python 
 |---|---------|------------|----------|---------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [Code](Pages/01-Two-Sum.xcplaygroundpage/Contents.swift) | [Writeup](Pages/01-Two-Sum.xcplaygroundpage/README.md) |
 | 2 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | [Code](Pages/02-Contains-Duplicate.xcplaygroundpage/Contents.swift) | [Writeup](Pages/02-Contains-Duplicate.xcplaygroundpage/README.md) |
-| 3 | [Problem 3](https://leetcode.com/problems/problem-3/) | Easy | [Code](Pages/03.xcplaygroundpage/Contents.swift) | [Writeup](Pages/03.xcplaygroundpage/README.md) |
+| 3 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | [Code](Pages/03-Valid-Anagram.xcplaygroundpage/Contents.swift) | [Writeup](Pages/03-Valid-Anagram.xcplaygroundpage/README.md) |
+| 4 | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | [Code](Pages/04-Missing-Number.xcplaygroundpage/Contents.swift) | [Writeup](Pages/04-Missing-Number.xcplaygroundpage/README.md) |
+| 5 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy | [Code](Pages/05-Majority-Element.xcplaygroundpage/Contents.swift) | [Writeup](Pages/05-Majority-Element.xcplaygroundpage/README.md) |
 
 ## 🛠 Features of this Setup
 
