@@ -73,22 +73,22 @@ Whenever you add a new Playground Page or update problem titles, run the Python 
 
 ## 📝 Solved Problems
 
-| # | Problem | Difficulty | Solution | Writeup |
-|---|---------|------------|----------|---------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [Code](Pages/01-Two-Sum.xcplaygroundpage/Contents.swift) | [Writeup](Pages/01-Two-Sum.xcplaygroundpage/README.md) |
-| 2 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | [Code](Pages/02-Contains-Duplicate.xcplaygroundpage/Contents.swift) | [Writeup](Pages/02-Contains-Duplicate.xcplaygroundpage/README.md) |
-| 3 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | [Code](Pages/03-Valid-Anagram.xcplaygroundpage/Contents.swift) | [Writeup](Pages/03-Valid-Anagram.xcplaygroundpage/README.md) |
-| 4 | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | [Code](Pages/04-Missing-Number.xcplaygroundpage/Contents.swift) | [Writeup](Pages/04-Missing-Number.xcplaygroundpage/README.md) |
-| 5 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy | [Code](Pages/05-Majority-Element.xcplaygroundpage/Contents.swift) | [Writeup](Pages/05-Majority-Element.xcplaygroundpage/README.md) |
-| 6 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | [Code](Pages/06-Valid-Palindrome.xcplaygroundpage/Contents.swift) | [Writeup](Pages/06-Valid-Palindrome.xcplaygroundpage/README.md) |
-| 7 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii---input-array-is-sorted/) | Medium | [Code](Pages/07-Two-Sum-II.xcplaygroundpage/Contents.swift) | [Writeup](Pages/07-Two-Sum-II.xcplaygroundpage/README.md) |
-| 8 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | [Code](Pages/08-Best-Time-to-Buy-and-Sell-Stock.xcplaygroundpage/Contents.swift) | [Writeup](Pages/08-Best-Time-to-Buy-and-Sell-Stock.xcplaygroundpage/README.md) |
-| 9 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [Code](Pages/09-Valid-Parentheses.xcplaygroundpage/Contents.swift) | [Writeup](Pages/09-Valid-Parentheses.xcplaygroundpage/README.md) |
-| 10 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | [Code](Pages/10-Binary-Search.xcplaygroundpage/Contents.swift) | [Writeup](Pages/10-Binary-Search.xcplaygroundpage/README.md) |
-| 11 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Code](Pages/11-Longest-Substring-Without-Repeating-Characters.xcplaygroundpage/Contents.swift) | [Writeup](Pages/11-Longest-Substring-Without-Repeating-Characters.xcplaygroundpage/README.md) |
-| 12 | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | Easy | [Code](Pages/12-Maximum-Average-Subarray-I.xcplaygroundpage/Contents.swift) | [Writeup](Pages/12-Maximum-Average-Subarray-I.xcplaygroundpage/README.md) |
-| 13 | [Min Stack](https://leetcode.com/problems/min-stack/) | Medium | [Code](Pages/13-Min-Stack.xcplaygroundpage/Contents.swift) | [Writeup](Pages/13-Min-Stack.xcplaygroundpage/README.md) |
-| 14 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | [Code](Pages/14-Search-a-2D-Matrix.xcplaygroundpage/Contents.swift) | [Writeup](Pages/14-Search-a-2D-Matrix.xcplaygroundpage/README.md) |
+| # | Problem | Difficulty | Category | Solution | Writeup |
+|---|---------|------------|----------|----------|---------|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Arrays & Hashing | [Code](Pages/01-Two-Sum.xcplaygroundpage/Contents.swift) | [Writeup](Pages/01-Two-Sum.xcplaygroundpage/README.md) |
+| 2 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | Arrays & Hashing | [Code](Pages/02-Contains-Duplicate.xcplaygroundpage/Contents.swift) | [Writeup](Pages/02-Contains-Duplicate.xcplaygroundpage/README.md) |
+| 3 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | Arrays & Hashing | [Code](Pages/03-Valid-Anagram.xcplaygroundpage/Contents.swift) | [Writeup](Pages/03-Valid-Anagram.xcplaygroundpage/README.md) |
+| 4 | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | Arrays & Hashing | [Code](Pages/04-Missing-Number.xcplaygroundpage/Contents.swift) | [Writeup](Pages/04-Missing-Number.xcplaygroundpage/README.md) |
+| 5 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy | Arrays & Hashing | [Code](Pages/05-Majority-Element.xcplaygroundpage/Contents.swift) | [Writeup](Pages/05-Majority-Element.xcplaygroundpage/README.md) |
+| 6 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Two Pointers | [Code](Pages/06-Valid-Palindrome.xcplaygroundpage/Contents.swift) | [Writeup](Pages/06-Valid-Palindrome.xcplaygroundpage/README.md) |
+| 7 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii---input-array-is-sorted/) | Medium | Two Pointers | [Code](Pages/07-Two-Sum-II.xcplaygroundpage/Contents.swift) | [Writeup](Pages/07-Two-Sum-II.xcplaygroundpage/README.md) |
+| 8 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | Sliding Window | [Code](Pages/08-Best-Time-to-Buy-and-Sell-Stock.xcplaygroundpage/Contents.swift) | [Writeup](Pages/08-Best-Time-to-Buy-and-Sell-Stock.xcplaygroundpage/README.md) |
+| 9 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | Stack | [Code](Pages/09-Valid-Parentheses.xcplaygroundpage/Contents.swift) | [Writeup](Pages/09-Valid-Parentheses.xcplaygroundpage/README.md) |
+| 10 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Binary Search | [Code](Pages/10-Binary-Search.xcplaygroundpage/Contents.swift) | [Writeup](Pages/10-Binary-Search.xcplaygroundpage/README.md) |
+| 11 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | Sliding Window | [Code](Pages/11-Longest-Substring-Without-Repeating-Characters.xcplaygroundpage/Contents.swift) | [Writeup](Pages/11-Longest-Substring-Without-Repeating-Characters.xcplaygroundpage/README.md) |
+| 12 | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | Easy | Sliding Window | [Code](Pages/12-Maximum-Average-Subarray-I.xcplaygroundpage/Contents.swift) | [Writeup](Pages/12-Maximum-Average-Subarray-I.xcplaygroundpage/README.md) |
+| 13 | [Min Stack](https://leetcode.com/problems/min-stack/) | Medium | Stack | [Code](Pages/13-Min-Stack.xcplaygroundpage/Contents.swift) | [Writeup](Pages/13-Min-Stack.xcplaygroundpage/README.md) |
+| 14 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | Binary Search | [Code](Pages/14-Search-a-2D-Matrix.xcplaygroundpage/Contents.swift) | [Writeup](Pages/14-Search-a-2D-Matrix.xcplaygroundpage/README.md) |
 
 ## 🛠 Features of this Setup
 

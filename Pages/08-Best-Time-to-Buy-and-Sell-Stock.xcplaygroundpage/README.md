@@ -1,4 +1,6 @@
 # Best Time to Buy and Sell Stock
+* **Category:** Sliding Window
+* **Difficulty:** Easy
 
 You are given an array `prices` where `prices[i]` is the price of a given stock on the `i`-th day.
 

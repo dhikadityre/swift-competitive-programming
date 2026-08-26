@@ -1,4 +1,6 @@
 # Maximum Average Subarray I
+* **Category:** Sliding Window
+* **Difficulty:** Easy
 
 You are given an integer array `nums` consisting of `n` elements, and an integer `k`.
 

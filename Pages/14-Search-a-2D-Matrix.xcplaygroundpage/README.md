@@ -1,4 +1,6 @@
 # Search a 2D Matrix
+* **Category:** Binary Search
+* **Difficulty:** Medium
 
 You are given an `m x n` integer matrix `matrix` with the following two properties:
 1. Each row is sorted in non-decreasing order.

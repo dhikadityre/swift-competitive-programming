@@ -36,11 +36,18 @@ def parse_existing_table(readme_content):
         if not line.strip().startswith('|'):
             continue
         parts = [p.strip() for p in line.split('|')]
-        # A valid row looks like: | 1 | [Title](Link) | Easy | [Code](...) | [Writeup](...) |
+        # A valid row looks like: | # | Problem | Difficulty | Category | Solution | Writeup |
+        # In the old format: | # | Problem | Difficulty | Solution | Writeup |
         if len(parts) >= 7 and parts[1].isdigit():
             num = int(parts[1])
             problem_cell = parts[2]
             difficulty = parts[3]
+            
+            # Extract category (or default to None if using the old 5-column format)
+            if len(parts) == 7:
+                category = None
+            else:
+                category = parts[4]
             
             # Extract title and link
             title_match = re.match(r'^\[([^\]]+)\]\(([^)]+)\)$', problem_cell)
@@ -55,7 +62,8 @@ def parse_existing_table(readme_content):
                 'num': num,
                 'title': title,
                 'link': link,
-                'difficulty': difficulty
+                'difficulty': difficulty,
+                'category': category
             }
     return existing_rows
 
@@ -90,6 +98,23 @@ def main():
     # Sort pages numerically
     pages.sort(key=lambda x: x['num'])
 
+    DEFAULT_CATEGORIES = {
+        1: "Arrays & Hashing",
+        2: "Arrays & Hashing",
+        3: "Arrays & Hashing",
+        4: "Arrays & Hashing",
+        5: "Arrays & Hashing",
+        6: "Two Pointers",
+        7: "Two Pointers",
+        8: "Sliding Window",
+        9: "Stack",
+        10: "Binary Search",
+        11: "Sliding Window",
+        12: "Sliding Window",
+        13: "Stack",
+        14: "Binary Search"
+    }
+
     # Build new table rows
     table_rows = []
     for p in pages:
@@ -104,23 +129,24 @@ def main():
         
         if num in existing_rows and not is_placeholder:
             row_data = existing_rows[num]
-            row_line = f"| {num} | [{row_data['title']}]({row_data['link']}) | {row_data['difficulty']} | [Code]({code_link}) | [Writeup]({writeup_link}) |"
+            category = row_data.get('category') or DEFAULT_CATEGORIES.get(num, "Arrays & Hashing")
+            row_line = f"| {num} | [{row_data['title']}]({row_data['link']}) | {row_data['difficulty']} | {category} | [Code]({code_link}) | [Writeup]({writeup_link}) |"
         else:
             # Create a new row or overwrite placeholder values
             slug = title.lower().replace(' ', '-')
             guessed_link = f"https://leetcode.com/problems/{slug}/"
             difficulty = "Easy"  # default placeholder
-            row_line = f"| {num} | [{title}]({guessed_link}) | {difficulty} | [Code]({code_link}) | [Writeup]({writeup_link}) |"
+            category = DEFAULT_CATEGORIES.get(num, "Arrays & Hashing")
+            row_line = f"| {num} | [{title}]({guessed_link}) | {difficulty} | {category} | [Code]({code_link}) | [Writeup]({writeup_link}) |"
             if is_placeholder:
                 print(f"Updating placeholder page: #{num} -> {title}")
             else:
                 print(f"Found new page: #{num} - {title}")
 
-
         table_rows.append(row_line)
 
     # Generate the table markdown block
-    table_header = "| # | Problem | Difficulty | Solution | Writeup |\n|---|---------|------------|----------|---------|"
+    table_header = "| # | Problem | Difficulty | Category | Solution | Writeup |\n|---|---------|------------|----------|----------|---------|"
     table_body = "\n".join(table_rows)
     new_table_markdown = f"{table_header}\n{table_body}"
 
