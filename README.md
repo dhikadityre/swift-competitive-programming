@@ -38,6 +38,17 @@ To open and run the solutions locally:
 4. **Navigate Pages**: Use the Xcode Project Navigator (left pane) to switch between different problems.
 5. **Run the Code**: Open the `Contents.swift` of any page and click the **Run** button to execute the test cases.
 
+### 🔄 Syncing the Solved Problems Table
+
+Whenever you add a new Playground Page or update problem titles, run the Python helper script to automatically sync and update the table under the **Solved Problems** section:
+
+1. Open your terminal at the root of this playground directory.
+2. Execute the script:
+   ```bash
+   python3 update_readme.py
+   ```
+3. Commit and push the updated `README.md` alongside your new page files.
+
 ---
 
 ## 📝 Solved Problems
