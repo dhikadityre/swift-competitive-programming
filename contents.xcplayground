@@ -12,5 +12,8 @@
         <page name='09-Valid-Parentheses'/>
         <page name='10-Binary-Search'/>
         <page name='11-Longest-Substring-Without-Repeating-Characters'/>
+        <page name='12-Maximum-Average-Subarray-I'/>
+        <page name='13-Min-Stack'/>
+        <page name='14-Search-a-2D-Matrix'/>
     </pages>
 </playground>
