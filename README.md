@@ -80,6 +80,12 @@ Whenever you add a new Playground Page or update problem titles, run the Python 
 | 3 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | [Code](Pages/03-Valid-Anagram.xcplaygroundpage/Contents.swift) | [Writeup](Pages/03-Valid-Anagram.xcplaygroundpage/README.md) |
 | 4 | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | [Code](Pages/04-Missing-Number.xcplaygroundpage/Contents.swift) | [Writeup](Pages/04-Missing-Number.xcplaygroundpage/README.md) |
 | 5 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy | [Code](Pages/05-Majority-Element.xcplaygroundpage/Contents.swift) | [Writeup](Pages/05-Majority-Element.xcplaygroundpage/README.md) |
+| 6 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | [Code](Pages/06-Valid-Palindrome.xcplaygroundpage/Contents.swift) | [Writeup](Pages/06-Valid-Palindrome.xcplaygroundpage/README.md) |
+| 7 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii---input-array-is-sorted/) | Easy | [Code](Pages/07-Two-Sum-II.xcplaygroundpage/Contents.swift) | [Writeup](Pages/07-Two-Sum-II.xcplaygroundpage/README.md) |
+| 8 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | [Code](Pages/08-Best-Time-to-Buy-and-Sell-Stock.xcplaygroundpage/Contents.swift) | [Writeup](Pages/08-Best-Time-to-Buy-and-Sell-Stock.xcplaygroundpage/README.md) |
+| 9 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [Code](Pages/09-Valid-Parentheses.xcplaygroundpage/Contents.swift) | [Writeup](Pages/09-Valid-Parentheses.xcplaygroundpage/README.md) |
+| 10 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | [Code](Pages/10-Binary-Search.xcplaygroundpage/Contents.swift) | [Writeup](Pages/10-Binary-Search.xcplaygroundpage/README.md) |
+| 11 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Easy | [Code](Pages/11-Longest-Substring-Without-Repeating-Characters.xcplaygroundpage/Contents.swift) | [Writeup](Pages/11-Longest-Substring-Without-Repeating-Characters.xcplaygroundpage/README.md) |
 
 ## 🛠 Features of this Setup
 

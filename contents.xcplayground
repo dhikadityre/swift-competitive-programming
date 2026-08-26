@@ -6,5 +6,11 @@
         <page name='03-Valid-Anagram'/>
         <page name='04-Missing-Number'/>
         <page name='05-Majority-Element'/>
+        <page name='06-Valid-Palindrome'/>
+        <page name='07-Two-Sum-II'/>
+        <page name='08-Best-Time-to-Buy-and-Sell-Stock'/>
+        <page name='09-Valid-Parentheses'/>
+        <page name='10-Binary-Search'/>
+        <page name='11-Longest-Substring-Without-Repeating-Characters'/>
     </pages>
 </playground>
