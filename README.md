@@ -36,7 +36,27 @@ To open and run the solutions locally:
    ```
 3. **Open the Playground**: Double-click `swift-competitive-programming.playground` to open it in Xcode.
 4. **Navigate Pages**: Use the Xcode Project Navigator (left pane) to switch between different problems.
-5. **Run the Code**: Open the `Contents.swift` of any page and click the **Run** button to execute the test cases.
+5. **Run the Code**: Open the `Contents.swift` of any page and run it.
+
+### 💡 Best Practices for Running Playgrounds
+
+Xcode Playgrounds can sometimes be tricky when managing multiple pages. Follow these tips for a better development experience:
+
+#### 1. Switch to "Manually Run" (Highly Recommended)
+To prevent Xcode from executing the entire playground automatically on every keystroke:
+* **Long-press** the **Play/Run** button at the bottom left of the editor (or the console bar).
+* Select **Manually Run** from the pop-up menu.
+
+#### 2. Run Only the Active Page
+Executing the entire playground will run all pages sequentially. To run only the page you are currently viewing:
+* **Keyboard Shortcut**: Press `Shift + Command + Enter` (Run Current Page). *Do not use `Command + Enter` as it executes the whole playground.*
+* **Project Navigator (Sidebar)**: Hover over the page name in the left sidebar and click the small play button next to it.
+* **Inline Editor**: Click the play button in the bottom bar of the code editor.
+
+#### 3. Clear the Console
+Because Xcode uses a shared console across all pages, logs from previous runs can stack up.
+* Press `Command + K` while focused on the console window to clear old outputs before running a new page.
+
 
 ### 🔄 Syncing the Solved Problems Table
 
