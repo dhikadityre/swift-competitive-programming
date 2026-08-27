@@ -25,6 +25,15 @@ Your solution must use only constant extra space.
 **Output:** [1,2]
 **Explanation:** The sum of -1 and 0 is -1. Therefore, index1 = 1, index2 = 2. We return [1, 2].
 
+## Clues & Formulas
+
+* **Metode Bruteforce**: Gunakan nested loop untuk mengecek semua pasangan angka.
+  * *Kompleksitas*: Waktu $O(n^2)$, Ruang $O(1)$.
+* **Metode yang Direkomendasikan**: Karena array sudah terurut, gunakan Two Pointers di ujung kiri dan kanan. Jika jumlah kedua angka kurang dari target geser pointer kiri ke kanan, jika jumlahnya lebih dari target geser pointer kanan ke kiri.
+  * *Kompleksitas*: Waktu $O(n)$, Ruang $O(1)$.
+* **Metode Lain**: Lakukan Binary Search untuk mencari komplemen (`target - numbers[i]`) bagi setiap elemen ke-$i$ pada sisa array di sebelah kanannya.
+  * *Kompleksitas*: Waktu $O(n \log n)$, Ruang $O(1)$.
+
 ## Constraints
 * `2 <= numbers.length <= 3 * 10⁴`
 * `-1000 <= numbers[i] <= 1000`

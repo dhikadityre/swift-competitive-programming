@@ -1,0 +1,32 @@
+# Maximum Average Subarray I
+* **Category:** Sliding Window
+* **Difficulty:** Easy
+
+You are given an integer array `nums` consisting of `n` elements, and an integer `k`.
+
+Find a contiguous subarray whose length is equal to `k` that has the maximum average value and return this value. Any answer with a calculation error less than $10^{-5}$ will be accepted.
+
+## Example 1
+**Input:** nums = [1,12,-5,-6,50,3], k = 4
+**Output:** 12.75000
+**Explanation:** Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
+
+## Example 2
+**Input:** nums = [5], k = 1
+**Output:** 5.00000
+
+## Clues & Formulas
+
+* **Metode Bruteforce**: Hitung jumlah dan rata-rata dari setiap kemungkinan subarray sepanjang `k` menggunakan nested loop.
+  * *Kompleksitas*: Waktu $O(n 	imes k)$, Ruang $O(1)$.
+* **Metode yang Direkomendasikan**: Gunakan Sliding Window dengan ukuran tetap `k`. Hitung jumlah dari `k` elemen pertama. Untuk elemen berikutnya, kurangi elemen paling kiri dari jendela dan tambahkan elemen baru di sebelah kanan jendela.
+  * *Rumus*: $	ext{Sum}_{new} = 	ext{Sum}_{old} + 	ext{nums}[i] - 	ext{nums}[i - k]$
+  * *Kompleksitas*: Waktu $O(n)$, Ruang $O(1)$.
+* **Metode Lain**: Gunakan Prefix Sum array. Buat array baru yang menyimpan akumulasi jumlah elemen, lalu hitung jumlah subarray menggunakan pengurangan prefix sum.
+  * *Rumus*: $	ext{Sum}(i, i+k-1) = 	ext{Prefix}[i+k] - 	ext{Prefix}[i]$
+  * *Kompleksitas*: Waktu $O(n)$, Ruang $O(n)$.
+
+## Constraints
+* `n == nums.length`
+* `1 <= k <= n <= 10⁵`
+* `-10⁴ <= nums[i] <= 10⁴`

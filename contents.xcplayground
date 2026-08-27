@@ -3,17 +3,5 @@
     <pages>
         <page name='01-Two-Sum'/>
         <page name='02-Contains-Duplicate'/>
-        <page name='03-Valid-Anagram'/>
-        <page name='04-Missing-Number'/>
-        <page name='05-Majority-Element'/>
-        <page name='06-Valid-Palindrome'/>
-        <page name='07-Two-Sum-II'/>
-        <page name='08-Best-Time-to-Buy-and-Sell-Stock'/>
-        <page name='09-Valid-Parentheses'/>
-        <page name='10-Binary-Search'/>
-        <page name='11-Longest-Substring-Without-Repeating-Characters'/>
-        <page name='12-Maximum-Average-Subarray-I'/>
-        <page name='13-Min-Stack'/>
-        <page name='14-Search-a-2D-Matrix'/>
     </pages>
 </playground>

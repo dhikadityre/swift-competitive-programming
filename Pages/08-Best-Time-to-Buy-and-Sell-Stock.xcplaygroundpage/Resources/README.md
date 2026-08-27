@@ -18,6 +18,16 @@ Return *the maximum profit you can achieve from this transaction*. If you cannot
 **Output:** 0
 **Explanation:** In this case, no transactions are done and the max profit = 0.
 
+## Clues & Formulas
+
+* **Metode Bruteforce**: Bandingkan harga beli di setiap hari dengan semua harga jual di hari-hari setelahnya menggunakan nested loop, lalu ambil profit maksimum.
+  * *Kompleksitas*: Waktu $O(n^2)$, Ruang $O(1)$.
+* **Metode yang Direkomendasikan**: Iterasi satu arah (One-Pass). Lacak harga terendah yang pernah ditemui sejauh ini (`min_price`), dan hitung profit jika menjual di harga hari ini. Update profit maksimum jika profit hari ini lebih besar.
+  * *Rumus*: $	ext{profit} = 	ext{price} - 	ext{min\_price}$
+  * *Kompleksitas*: Waktu $O(n)$, Ruang $O(1)$.
+* **Metode Lain**: Gunakan pendekatan Dynamic Programming atau Kadane's Algorithm dengan mengubah array harga menjadi array selisih harga harian, lalu cari nilai Maximum Subarray.
+  * *Kompleksitas*: Waktu $O(n)$, Ruang $O(1)$ atau $O(n)$.
+
 ## Constraints
 * `1 <= prices.length <= 10⁵`
 * `0 <= prices[i] <= 10⁴`

@@ -26,6 +26,15 @@ target = 9
 `nums[0] + nums[1] = 2 + 7 = 9`
 Therefore, the answer is `[0, 1]`.
 
+## Clues & Formulas
+
+* **Metode Bruteforce**: Cek semua pasangan angka yang mungkin menggunakan nested loop.
+  * *Kompleksitas*: Waktu $O(n^2)$, Ruang $O(1)$.
+* **Metode yang Direkomendasikan**: Gunakan Hash Map untuk menyimpan angka yang sudah dilewati beserta indeksnya. Untuk setiap angka, periksa apakah komplemennya (`target - angka`) sudah ada di Hash Map.
+  * *Kompleksitas*: Waktu $O(n)$, Ruang $O(n)$.
+* **Metode Lain**: Urutkan array terlebih dahulu (sorting), lalu gunakan pendekatan Two Pointers untuk mencari pasangan angka.
+  * *Kompleksitas*: Waktu $O(n \log n)$, Ruang $O(1)$.
+
 ## Constraints
 * `2 <= nums.count <= 10⁴`
 * `-10⁹ <= nums[i] <= 10⁹`

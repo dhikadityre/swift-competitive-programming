@@ -16,6 +16,16 @@ You must write an algorithm with $O(\log n)$ runtime complexity.
 **Output:** -1
 **Explanation:** 2 does not exist in nums so return -1.
 
+## Clues & Formulas
+
+* **Metode Bruteforce**: Gunakan Linear Search dengan mengiterasi array dari awal sampai akhir untuk mencari nilai target.
+  * *Kompleksitas*: Waktu $O(n)$, Ruang $O(1)$.
+* **Metode yang Direkomendasikan**: Gunakan Binary Search klasik dengan membagi area pencarian menjadi dua di setiap iterasi menggunakan pointer `left` dan `right`.
+  * *Rumus*: Indeks tengah $	ext{mid} = 	ext{left} + rac{	ext{right} - 	ext{left}}{2}$
+  * *Kompleksitas*: Waktu $O(\log n)$, Ruang $O(1)$.
+* **Metode Lain**: Gunakan Binary Search secara rekursif dengan meneruskan batas indeks kiri dan kanan ke pemanggilan fungsi berikutnya.
+  * *Kompleksitas*: Waktu $O(\log n)$, Ruang $O(\log n)$ call stack.
+
 ## Constraints
 * `1 <= nums.length <= 10⁴`
 * `-10⁴ < nums[i], target < 10⁴`

@@ -21,7 +21,7 @@ def get_page_number_and_name(folder_name):
     return None, None
 
 def get_title_from_readme(page_folder):
-    readme_path = os.path.join(PAGES_DIR, page_folder, 'README.md')
+    readme_path = os.path.join(PAGES_DIR, page_folder, 'Resources', 'README.md')
     if os.path.exists(readme_path):
         with open(readme_path, 'r', encoding='utf-8') as f:
             for line in f:
@@ -122,7 +122,7 @@ def main():
         folder = p['folder']
         title = p['title']
         code_link = f"Pages/{folder}/Contents.swift"
-        writeup_link = f"Pages/{folder}/README.md"
+        writeup_link = f"Pages/{folder}/Resources/README.md"
 
         # If it already exists in the table, preserve its metadata (unless it was a placeholder)
         is_placeholder = num in existing_rows and existing_rows[num]['title'].startswith('Problem ') and not title.startswith('Problem ')

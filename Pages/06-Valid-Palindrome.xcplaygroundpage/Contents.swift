@@ -26,3 +26,6 @@ print("6 Test Case 2: s = \"race a car\" -> Result: \(test2) (Expected: false)")
 
 let test3 = solution.isPalindrome(" ")
 print("6 Test Case 3: s = \" \" -> Result: \(test3) (Expected: true)")
+
+let test4 = solution.isPalindrome("a121a")
+print("6 Result: \(test4) (Expected: true)")
